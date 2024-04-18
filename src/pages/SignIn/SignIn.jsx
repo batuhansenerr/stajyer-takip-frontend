@@ -23,6 +23,7 @@ const login = async(e) => {
     if(request.status===200){
         console.log("girdik", request);
         localStorage.setItem("token", request.data)
+        navigate("/profile")
     }
 }
 

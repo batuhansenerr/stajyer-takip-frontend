@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 const Project = () => {
 const {id} = useParams()
@@ -41,7 +41,8 @@ useEffect(()=>{
         <div>Proje Durumu: {project.projectStatus}</div>
         <div>Proje Bitiş Tarihi: {project.finishDate}</div>
         <div>
-        <h4>Kullanıcının Yorumları</h4>
+        <button><Link to={`/project/${project.id}/comments/new`}>Yorum Yap</Link></button>
+        <h4>Kullanıcı Yorumları</h4>
         {
             project.comments.map((comment, index)=>(
                 <div key={index}>
@@ -54,6 +55,7 @@ useEffect(()=>{
                     <div>Proje Durumu: {comment.user.surname}</div>
                     <div>Proje Bitiş Tarihi: {comment.user.id}</div>
                     <br />
+                    ----------------------------------
                 </div>
             ))
         }
