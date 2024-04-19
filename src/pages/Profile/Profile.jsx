@@ -27,7 +27,8 @@ const getUser = async() => {
         url: `http://localhost:8080/auth/profile`
     }).then(response=>{
         setUser(response.data)
-        console.log(response.data);
+        localStorage.setItem("userRole", response.data.authorities)
+        localStorage.setItem("username", response.data.username)
     })
 }
 
