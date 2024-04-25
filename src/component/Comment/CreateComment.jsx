@@ -39,7 +39,8 @@ const CreateComment = () => {
   return (
     <>
         <form onSubmit={(e)=>createComment(e)}>
-            <input type="text" id='comment' name='comment' required value={comment} onChange={(e)=>handleInput(e)}/>
+            
+            <textarea id='comment' name='comment' required value={comment} onChange={(e)=>handleInput(e)}/>
             <button type='submit'>Yorum Yap</button>
         </form>
     </>
