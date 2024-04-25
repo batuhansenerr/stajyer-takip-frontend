@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
+import CommentListItem from '../../component/Comment/CommentListItem'
 
 const Project = () => {
 const {id} = useParams()
@@ -114,7 +115,8 @@ useEffect(()=>{
         <h4>Kullanıcı Yorumları</h4>
         {
             project.comments.map((comment, index)=>(
-                <div key={index}>
+                <CommentListItem comment={comment}/>
+                /*<div key={index}>
                     <Link to={`/comment/${comment.id}`}>
                     <h5>yorum {index+1}</h5>
                     <div>Yorum Id: {comment.id}</div>
@@ -126,7 +128,7 @@ useEffect(()=>{
                     <div>Proje Bitiş Tarihi: {comment.user.id}</div>
                     <br />
                     </Link>
-                </div>
+                </div>*/
             ))
         }
         </div>
