@@ -8,6 +8,7 @@ import Profile from './pages/Profile/Profile';
 import Project from './pages/Project/Project';
 import PrivateRoutes from './utils/PrivateRoutes';
 import CreateComment from './component/Comment/CreateComment';
+import Comment from './pages/Comment/Comment';
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/profile" element={<Profile/>} />
           <Route exact path="/project/:id/comments/new" element={<CreateComment/>} />
           <Route exact path="/project/:id" element={<Project/>} />
+          <Route exact path="/comment/:id" element={<Comment/>} />
         </Routes>
       </Router>
     </>
