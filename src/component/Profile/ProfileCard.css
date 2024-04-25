@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+}
+
+.profileCard{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+.profileCardImage{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 2rem;
+}
+
+.profileCardDetails{
+    text-align: left;
+}
+
+.profileCardButtons{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+}
+
+.profileCardButtons > button {
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    background-color: transparent;
+    border: 0.1px #84B0CD solid;
+    color: #84B0CD;
+    border-radius: 0;
+}
+
+.profileCardButtons > button:hover {
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: #09629B;
+    background-color: transparent;
+    border: 0.1px #09629B solid;
+    border-radius: 0;
+}
+
+.profileCardButtons > button:hover {
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: black;
+    background-color: transparent;
+    border: 0.1px #09629B solid;
+    border-radius: 0;
+    transition: 0.5s all;
+}
+
+h2{
+    font-weight: 700;
+}
+
+h4{
+    font-weight: 300;
+}
