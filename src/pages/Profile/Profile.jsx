@@ -1,6 +1,9 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import ProjectListItem from '../../component/Project/ProjectListItem'
+import './Profile.css'
+import ProfileCard from '../../component/Profile/ProfileCard'
 
 const Profile = () => {
 
@@ -10,7 +13,8 @@ const [user, setUser] = useState({
     id: "",
     password: "",
     projects: [],
-    comments: []
+    comments: [],
+    authorities: []
 })
 
 useEffect(()=>{
@@ -34,12 +38,19 @@ const getUser = async() => {
 
   return (
     <>
-        <h3>{user.id}</h3>
-        <h3>{user.name} {user.surname}</h3>
+    <div className="major-y">
+        <ProfileCard user={user}/>
         <div>
         <h4>Projeler</h4>
+        <br />
+        <div className="project-filter">
+            <input type="text" name="" id="" placeholder='Proje Adı'/>
+            <button>Yeni</button>
+        </div>
         {
             user.projects.map((project, index)=>(
+                <ProjectListItem project={project}/>
+                /* 
                 <div key={index}>
                     <Link to={`/project/${project.id}`}>
                     <div>Proje Id: {project.id}</div>
@@ -51,10 +62,11 @@ const getUser = async() => {
                     </Link>
                     <br />
                 </div>
+                */
             ))
         }
         </div>
-        <div>
+        {/*<div>
         <h4>Kullanıcının Yorumları</h4>
         {
             user.comments.map((comment, index)=>(
@@ -69,7 +81,8 @@ const getUser = async() => {
                 </div>
             ))
         }
-        </div>
+    </div>*/}
+    </div>
     </>
   )
 }

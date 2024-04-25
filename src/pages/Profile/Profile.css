@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Lora|Playfair+Display:700i,900');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+}
+
+.project-filter{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+.project-filter>input{
+    width: 70%;
+    align-items: center;
+    border: 0;
+    border-bottom: #09629B solid 1px;
+    font-size: medium;
+    padding: 0.5rem 0.5rem;
+    font-size: 16px;
+}
+
+.project-filter>input:focus{
+    width: 70%;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-bottom: #09629B solid 1px;
+    font-size: medium;
+    padding: 0.5rem 0.5rem;
+}
+
+.major-y{
+    display: flex;
+}
+
+.project-filter>button{
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: #09629B;
+    background-color: transparent;
+    border: 0.1px #09629B solid;
+    border-radius: 0;
+}
+
+.project-filter>button:hover{
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: black;
+    background-color: transparent;
+    border: 0.1px #09629B solid;
+    border-radius: 0;
+    transition: 0.5s all;
+}
