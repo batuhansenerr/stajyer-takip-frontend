@@ -40,29 +40,16 @@ const getUser = async() => {
     <>
     <div className="major-y">
         <ProfileCard user={user}/>
-        <div>
-        <h4>Projeler</h4>
+        <div className='projectlist'>
+        <h3>Projeler</h3>
         <br />
         <div className="project-filter">
             <input type="text" name="" id="" placeholder='Proje Adı'/>
-            <button>Yeni</button>
+            <button><a href={`/project/new`}>Yeni</a></button>
         </div>
         {
             user.projects.map((project, index)=>(
                 <ProjectListItem project={project}/>
-                /* 
-                <div key={index}>
-                    <Link to={`/project/${project.id}`}>
-                    <div>Proje Id: {project.id}</div>
-                    <div>Proje Adı: {project.name}</div>
-                    <div>Başlangıç Tarihi: {project.initialDate}</div>
-                    <div>Proje Puanı: {project.score}</div>
-                    <div>Proje Durumu: {project.projectStatus}</div>
-                    <div>Proje Bitiş Tarihi: {project.finishDate}</div>
-                    </Link>
-                    <br />
-                </div>
-                */
             ))
         }
         </div>

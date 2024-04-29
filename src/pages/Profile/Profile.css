@@ -59,3 +59,7 @@ body{
     border-radius: 0;
     transition: 0.5s all;
 }
+
+.projectlist{
+    width: 700px;
+}

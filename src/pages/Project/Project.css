@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -6,4 +8,126 @@
 
 body{
     
+}
+
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem 2rem;
+    max-width: 720px;
+}
+
+.projectCard>.title{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 1rem;
+    color: #84B0CD;
+}
+
+.projectCard>.requirements{
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.commentButton{
+    width: 100%;
+}
+
+.commentButton>button{
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: #09629B;
+    background-color: transparent;
+    border: 0.1px #09629B solid;
+    border-radius: 0;
+    width: fit-content;
+    margin-left: 600px;
+}
+
+.commentButton>button:hover{
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: black;
+    background-color: transparent;
+    border: 0.1px #09629B solid;
+    border-radius: 0;
+    transition: 0.5s all;
+    margin-left: 600px;
+}
+
+button>a{
+    text-decoration: none;
+    color: #09629B;
+}
+
+button>a:hover{
+    color: black;
+    transition: 0.5s all;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.inputs>input{
+    align-items: center;
+    border: none;
+    outline: none;
+    border-bottom: #09629B solid 1px;
+    font-size: medium;
+    padding: 0.5rem 0.5rem;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputItem{
+    margin: 1rem 0;
+}
+
+
+
+.buttons>button{
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: #09629B;
+    background-color: transparent;
+    border: 0.1px #09629B solid;
+    border-radius: 0;
+}
+
+.buttons>button:hover{
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: black;
+    background-color: transparent;
+    border: 0.1px #09629B solid;
+    border-radius: 0;
+    transition: 0.5s all;
+}
+
+select{
+    background-color: transparent;
+    border: #84B0CD solid 1px;
+    color: black;
+    height: 40px
+}
+
+button>a{
+    font-weight: 300;
+}
+
+.major-y{
+    display: flex;
 }
