@@ -11,7 +11,7 @@ body{
 .commentCard{
     display: flex;
     flex-direction: column;
-    border-bottom: #09629B solid 1px;
+    border-bottom: #E1E1E1 solid 1px;
     margin: 1rem;
     color: #09629B;
     width: 700px;
@@ -40,10 +40,11 @@ a{
     color: black; 
     font-size: 10px; 
     font-weight: 300; 
-    padding: 10px; 
+    padding: 5px; 
     border: none; 
-    border-radius: 4px; 
+    border-radius: 0; 
     cursor: pointer; 
+    background-color: transparent;
 } 
   
 i { 
@@ -73,5 +74,51 @@ i {
   
 .dropdownlist a:hover { 
     background-color: transparent;
+    color: #84B0CD;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 15px;
+    height: 2px;
+    background-color: #09629B;
+    margin: 2px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+  
+.details>button{
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: #09629B;
+    background-color: transparent;
+    border: 0.1px #09629B solid;
+    border-radius: 0;
+}
+
+.details>button:hover{
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: black;
+    background-color: transparent;
+    border: 0.1px #09629B solid;
+    border-radius: 0;
+    transition: 0.5s all;
+}
+
+.user>a{
     color: #84B0CD;
 }

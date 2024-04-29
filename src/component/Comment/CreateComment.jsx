@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import './CreateComment.css'
 
 const CreateComment = () => {
 
@@ -40,7 +41,7 @@ const CreateComment = () => {
     <>
         <form onSubmit={(e)=>createComment(e)}>
             
-            <textarea id='comment' name='comment' required value={comment} onChange={(e)=>handleInput(e)}/>
+            <textarea className="inputItem" id='comment' name='comment' required value={comment} onChange={(e)=>handleInput(e)}/>
             <button type='submit'>Yorum Yap</button>
         </form>
     </>

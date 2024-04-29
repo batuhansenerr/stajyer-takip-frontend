@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+}
+
+.inputItem{
+    border: 1px solid #09629B;
+    margin: 0.5rem 0;
+}
+
+input{
+    font-size: 20px;
+    font-weight: 300;
+    height: 3rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+textarea{
+    font-size: 20px;
+    font-weight: 300;
+    height: 3rem;
+    padding: 1rem;
+    max-width: 635px;
+    max-height: 500px;
+    min-width: 635px;
+    min-height: 200px;
+}
+
+
+button{
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: #09629B;
+    background-color: transparent;
+    border: 0.1px #09629B solid;
+    border-radius: 0;
+    width: fit-content;
+}
+
+button:hover{
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: black;
+    background-color: transparent;
+    border: 0.1px #09629B solid;
+    border-radius: 0;
+    transition: 0.5s all;
+}
