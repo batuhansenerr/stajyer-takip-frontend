@@ -9,6 +9,7 @@ import Project from './pages/Project/Project';
 import PrivateRoutes from './utils/PrivateRoutes';
 import CreateComment from './component/Comment/CreateComment';
 import Comment from './pages/Comment/Comment';
+import CreateProject from './component/Project/CreateProject';
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/project/:id/comments/new" element={<CreateComment/>} />
           <Route exact path="/project/:id" element={<Project/>} />
           <Route exact path="/comment/:id" element={<Comment/>} />
+          <Route exact path="/project/new" element={<CreateProject/>} />
         </Routes>
       </Router>
     </>
