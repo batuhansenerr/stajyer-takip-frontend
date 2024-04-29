@@ -35,7 +35,7 @@ const SignUp = () => {
         e.preventDefault()
         await axios.post("http://localhost:8080/auth/register", user)
         navigate("/")
-    } 
+    }
 
   return (
     <>
