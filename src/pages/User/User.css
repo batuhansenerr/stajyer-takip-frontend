@@ -1,0 +1,130 @@
+.general>.major-y{
+    width: 1020px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    align-items: start;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.7rem;
+    border: 1px #E1E1E1 solid;
+    margin-bottom: 2rem;
+}
+
+.profilePhoto>img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.top>.details{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 4rem;
+}
+
+.details>div{
+    margin: 0.5rem 0;
+}
+
+.bottom{
+    display: flex;
+    padding: 1rem 0;
+}
+
+.bottom>.projects{
+    width: 50%;
+    border: 1px solid black;
+    margin-right: 1rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.7rem;
+    border: 1px #E1E1E1 solid;
+}
+
+.bottom>.interns{
+    width: 50%;
+    border: 1px solid black;
+    margin-left: 1rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.7rem;
+    border: 1px #E1E1E1 solid;
+}
+
+.interns>.yesil{
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: green;
+    font-size: 12px;
+    width: 100px;
+    background-color: transparent;
+    border: 0.1px green solid;
+    border-radius: 0;
+    margin-left: 22rem;
+}
+
+.interns>.yesil:hover{
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: black;
+    background-color: transparent;
+    border: 0.1px rgb(4, 90, 4) solid;
+    border-radius: 0;
+    transition: 0.5s all;
+    margin-left: 22rem;
+}
+
+
+.interns>.kirmizi{
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: rgb(128, 0, 0);
+    font-size: 12px;
+    width: 100px;
+    background-color: transparent;
+    border: 0.1px rgb(128, 0, 0) solid;
+    border-radius: 0;
+    margin-left: 22rem;
+}
+
+.interns>.kirmizi:hover{
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    color: black;
+    background-color: transparent;
+    border: 0.1px rgb(90, 4, 4) solid;
+    border-radius: 0;
+    transition: 0.5s all;
+    margin-left: 22rem;
+}
+
+input{
+    align-items: center;
+    border: 0;
+    border-bottom: #09629B solid 1px;
+    font-size: medium;
+    font-size: 16px;
+    width: 10rem;
+}
+
+select{
+    align-items: center;
+    border: 0;
+    width: 10rem;
+    border-bottom: #09629B solid 1px;
+    font-size: medium;
+    font-size: 16px;
+}
+
+.asd{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
