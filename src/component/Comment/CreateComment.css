@@ -18,7 +18,7 @@ body{
 input{
     font-size: 20px;
     font-weight: 300;
-    height: 3rem;
+    height: 3rem;       
     padding: 1rem;
     width: 100%;
 }
@@ -35,7 +35,7 @@ textarea{
 }
 
 
-button{
+form>button{
     margin: 0.5rem 1rem;
     font-weight: 300;
     color: #09629B;
@@ -45,7 +45,7 @@ button{
     width: fit-content;
 }
 
-button:hover{
+form>button:hover{
     margin: 0.5rem 1rem;
     font-weight: 300;
     color: black;
@@ -53,4 +53,13 @@ button:hover{
     border: 0.1px #09629B solid;
     border-radius: 0;
     transition: 0.5s all;
+}
+
+.createCommentCard{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    border: 1px solid #09629B;
+    width: 700px;
+    background-color: white;
 }
