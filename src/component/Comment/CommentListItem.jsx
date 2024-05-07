@@ -30,7 +30,7 @@ const CommentListItem = ({comment}) => {
             headers:{
                 Authorization: `Bearer ${token}`
             },
-            method: "PUT",
+            method: "PATCH",
             url: `http://localhost:8080/comment/update/${comment.id}`,
             data: {
                 comment: newComment.comment
@@ -62,7 +62,7 @@ const CommentListItem = ({comment}) => {
             method: "DELETE",
             url: `http://localhost:8080/comment/delete/${comment.id}`
         }).then(() => {
-            console.log("buradayız");
+            console.log("delete comment");
             comment = null
         })
     }
@@ -80,14 +80,14 @@ const CommentListItem = ({comment}) => {
                     </div>
                     </button> 
                     <div class="dropdownlist"> 
-                        <a href="#" onClick={handleEditClick}>Düzenle</a> 
-                        <a href="#" onClick={deleteComment}>Sil</a>
+                        <a onClick={handleEditClick}>Düzenle</a> 
+                        <a onClick={deleteComment}>Sil</a>
                     </div> 
                 </div>) : (<></>)}
         
                 <p>{comment.comment}</p>
                 <div className="details">
-                    <div className="user"><a href={`/comment/${comment.id}`}>@{comment.user.username}</a></div>
+                    <div className="user"><a href={`/user/${comment.user.id}`}>@{comment.user.username}</a></div>
                     <div className="date">{comment.releaseDate}</div>
                 </div>
                 </div>

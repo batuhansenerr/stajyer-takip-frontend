@@ -41,9 +41,9 @@ const Comment = () => {
         const loggedInUsername = localStorage.getItem("username")
         if (loggedInUsername === username) {
             setIsOwner(true)
-            console.log("aaaaaaaaa");
+            console.log("User Validation Comment Owning true");
         } else {
-            console.log("wwwwwww", loggedInUsername, username);
+            console.log("User Validation Comment Owning false", loggedInUsername, username);
         }
     }
 
@@ -56,7 +56,7 @@ const Comment = () => {
             method: "DELETE",
             url: `http://localhost:8080/comment/delete/${id}`
         }).then(()=>{
-            console.log("buradayız");
+            console.log("delete comment");
             navigate(`/project/${newcomment.project.id}`)
         })
     }
