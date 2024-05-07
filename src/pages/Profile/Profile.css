@@ -6,9 +6,6 @@
     box-sizing: border-box;
 }
 
-body{
-
-}
 
 .project-filter{
     display: flex;
@@ -44,9 +41,9 @@ body{
 .project-filter>button{
     margin: 0.5rem 1rem;
     font-weight: 300;
-    color: #09629B;
+    color: #029BDA;
     background-color: transparent;
-    border: 0.1px #09629B solid;
+    border: 0.1px #029BDA solid;
     border-radius: 0;
 }
 
@@ -55,11 +52,19 @@ body{
     font-weight: 300;
     color: black;
     background-color: transparent;
-    border: 0.1px #09629B solid;
+    border: 0.1px #029BDA solid;
     border-radius: 0;
     transition: 0.5s all;
 }
 
 .projectlist{
-    width: 700px;
+    width: 720px;
+    margin-left: 2rem;
+    border: 1px #E1E1E1 solid;
+    background-color: white;
+    border-radius: 0.7rem;
+}
+
+select{
+    margin: 0 1rem 0 2rem;
 }
