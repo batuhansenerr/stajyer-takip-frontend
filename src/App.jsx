@@ -10,6 +10,8 @@ import PrivateRoutes from './utils/PrivateRoutes';
 import CreateComment from './component/Comment/CreateComment';
 import Comment from './pages/Comment/Comment';
 import CreateProject from './component/Project/CreateProject';
+import Users from './pages/Admin/Users';
+import User from './pages/User/User';
 
 function App() {
   
@@ -20,11 +22,13 @@ function App() {
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/register" element={<SignUp/>} />
           <Route exact path="/login" element={<SignIn/>} />
-          <Route exact path="/profile" element={<Profile/>} />
+          <Route exact path="/projects" element={<Profile/>} />
           <Route exact path="/project/:id/comments/new" element={<CreateComment/>} />
           <Route exact path="/project/:id" element={<Project/>} />
           <Route exact path="/comment/:id" element={<Comment/>} />
           <Route exact path="/project/new" element={<CreateProject/>} />
+          <Route exact path="/admin/users" element={<Users/>} />
+          <Route exact path="/user/:id" element={<User/>} />
         </Routes>
       </Router>
     </>
