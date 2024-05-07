@@ -38,11 +38,17 @@ body{
     padding: 1rem 2rem;
     border: 1px solid #09629B;
     width: 700px;
+    background-color: white;
+}
+
+.createProjectCard>h2{
+    color: #09629B;
 }
 
 .inputItem{
     border: 1px solid #09629B;
     margin: 0.5rem 0;
+    background-color: transparent;
 }
 
 input{

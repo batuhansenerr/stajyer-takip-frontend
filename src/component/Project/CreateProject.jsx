@@ -28,7 +28,7 @@ const CreateProject = () => {
             url: "http://localhost:8080/project/add",
             data: newProject
         }).then(response=>{
-            console.log("wwwwwwwwwwwwwwwwwwwwwwwwwwwwW");
+            console.log("save project");
             navigate(`/project/${response.data.id}`)
         })
     }
