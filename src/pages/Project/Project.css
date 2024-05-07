@@ -15,7 +15,10 @@ body{
     flex-direction: column;
     text-align: left;
     padding: 1rem 2rem;
-    max-width: 720px;
+    background-color: white;
+    margin-left: 2rem;
+    border-radius: 0.7rem;
+    border: 1px #E1E1E1 solid;
 }
 
 .projectCard>.title{
@@ -23,7 +26,7 @@ body{
     font-weight: 700;
     font-size: 26px;
     margin-bottom: 1rem;
-    color: #84B0CD;
+    color: #029BDA;
 }
 
 .projectCard>.requirements{
@@ -45,18 +48,18 @@ body{
     border: 0.1px #09629B solid;
     border-radius: 0;
     width: fit-content;
-    margin-left: 600px;
+    margin-left: 632px;
 }
 
 .commentButton>button:hover{
     margin: 0.5rem 1rem;
     font-weight: 300;
-    color: black;
+    color: white;
     background-color: transparent;
-    border: 0.1px #09629B solid;
+    border: 0.1px white solid;
     border-radius: 0;
     transition: 0.5s all;
-    margin-left: 600px;
+    margin-left: 632px;
 }
 
 button>a{
@@ -95,8 +98,6 @@ form{
 .inputItem{
     margin: 1rem 0;
 }
-
-
 
 .buttons>button{
     margin: 0.5rem 1rem;
